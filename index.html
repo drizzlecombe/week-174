@@ -22,13 +22,28 @@
                 /* border: thin solid red; */
                 margin-left: auto;
                 margin-right: auto;
-                width: 85%;
+                width: 70%;
                 margin-top: 20px;
                 margin-bottom: 40px;
                 padding-left: 40px;
                 padding-right: 40px;
                 padding-bottom: 40px;
             }
+
+            /* Apply these styles when the browser width is 768px or less (tablets/mobiles) */
+            @media (max-width: 768px) {
+                body {
+                    width: 80%; /* Smaller margin for smaller screens */
+                }
+            }
+
+            /* Apply these styles when the browser width is 480px or less (mobiles) */
+            @media (max-width: 480px) {
+                body {
+                    width: 90%; /* Even smaller margin for very small screens */
+            }
+}
+            
             div#n1acw_container {
                 overflow: auto;
                 border: thin solid red;
